@@ -22,9 +22,9 @@ function bindValues(\PDOStatement $stmt, array $keyValues) {
     return $stmt;
 }
 
-$dsn = "mysql:host=192.168.2.18;dbname=distribute;charset=utf8;";
+$dsn = "";
 
-$pdo = new \PDO($dsn, "root", "meicai@!#");
+$pdo = new \PDO($dsn, "", "");
 //$pdo = new \PDO($dsn, "distribute_dev_rw", "123456");
 
 
