@@ -82,7 +82,7 @@ Class SqlBindBuilder
 		// build类型检查
         $types = (new ReflectionClass(__CLASS__))->getConstants();
 		if(!in_array($buildType, $types, true)) {
-			throw new InvalidArgumentException("buildType $type is not defined.");
+			throw new InvalidArgumentException("buildType $buildType is not defined.");
 		}
 		if(!in_array($placeholder, ['?', ':'])) {
 			throw new InvalidArgumentException("placeholder only support ? or :");
